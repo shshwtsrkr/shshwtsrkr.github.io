@@ -1,0 +1,99 @@
+<html>
+<head>
+<style>
+	#b0
+	{
+		border-radius: 15px;	
+		background-color: #b5d6ab;
+	}
+	
+	#b1
+	{
+		text-align: center;
+	}
+
+	#b2
+	{
+		border-radius: 15px;
+		text-align: center;
+		background-color: #0563b5;
+		color: #b3f2ff;
+		padding: 5px;
+		width: 1540px;
+		margin: 10px;
+	}
+
+
+	#b3
+	{
+		border-radius: 15px;
+		text-align: center;
+		background-color: #0563b5;
+		color: #b3f2ff;
+		padding: 5px;
+		width: 1540px;
+		margin: 10px;
+	}
+	
+	img
+	{
+  		border-radius: 3%;
+	}
+</style>
+</head>
+
+<body>
+<div id="b0">
+	<div id="b1">
+		<br></br>
+		<br></br>
+		<input type="button" value="Click to know Name & Reg. no." onclick="alert_mess()" style="background-color:#406340;border-radius: 8px;border: none;height: 50px; width: 200px;color: #b5d6ab;"><br></br>
+	</div>
+	
+	<div id="b2">
+		<br></br>
+		<br></br>
+		<img src="zlatan.jpg" width="320" height="380" onmouseover="enlarge(this)" onmouseout="shrink(this)"><br>
+		<p id="name" onmouseover="more()" onmouseout="less()">Zlatan Ibrahimovic</p>
+	</div>
+	
+	<div id="b3">
+		&#169;Official Email-ID : shashwat_202000530@smit.smu.edu.in<br>Check this<br>
+	</div>
+	
+	<br>
+</div>
+</body>
+
+<script>
+	function alert_mess()
+	{
+		alert("Name : Shashwat Sarkar\nReg. no. : 202000530");
+	}
+
+	function enlarge(a)
+	{
+		a.style.width="400";
+		a.style.height="550";
+	}
+
+	function shrink(a)
+	{
+		a.style.width="200";
+		a.style.height="250";
+	}
+
+	function more()
+	{
+		var x = document.getElementById("name");
+		x.style.fontSize = "50";
+	}
+
+
+	function less()
+	{
+		var x = document.getElementById("name");
+		x.style.fontSize = "20 ";
+	}
+</script>
+</html>
